@@ -1,0 +1,50 @@
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <math.h>
+    #include <conio.h>
+
+
+    int main()
+    {
+    /* 08           Escrever um programa na linguagem C para ler um numero;
+                sabendo que hoje é segunda-feira, que dia da semana será se somar o número de dias informado */
+
+    int numero_somar, resto;
+    printf("Numero a somar nos dias:", numero_somar);
+    scanf("%d", &numero_somar);
+    
+    resto = numero_somar % 7;
+
+    switch (resto)
+{
+    case 0:
+     printf("Segunda-Feira");
+    break;
+
+   case 1:
+     printf("Terça-Feira");
+   break;
+
+   case 2:
+     printf("Quarta-Feira");
+   break;
+
+   case 3:
+     printf("Quinta-Feira");
+   break;
+
+   case 4:
+     printf("Sexta-Feira");
+   break;
+
+   case 5:
+     printf("Sabado");
+    break;
+
+    case 6:
+     printf("Domingo");
+    break;
+
+  }
+}
+

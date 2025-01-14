@@ -1,0 +1,39 @@
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <math.h>
+
+
+
+    int main()
+    {
+    float custo_lata, altura, raio, PI, area_base, area_total, area_lateral;
+    int quantidade_tinta, quantidade_lata;
+    PI = 3.1415;
+    custo_lata = 50;
+
+
+    printf("Altura do Cilindro: ");
+    scanf("%f", &altura);
+    setbuf(stdin, NULL);
+    printf("Raio do Cilindro: ");
+    scanf("%f", &raio);
+    setbuf(stdin, NULL);
+
+
+    area_base = PI * raio * raio;
+    area_lateral = 2 * PI * raio * altura;
+    area_total = area_lateral + 2 * area_base;
+    printf("Area Base %.2f metros quadrados", area_base);
+    printf("\nArea Lateral %.2f metros quadrados", area_lateral);
+    printf("\nArea Total %.2f metros quadrados", area_total);
+
+// cada litro DE TINTA PINTA 3 METROS QUADRADOS
+    quantidade_tinta = area_total / 3;
+
+    quantidade_lata = (quantidade_tinta / 5) + 1;
+    printf("\nQuantidade de Latas: %d Latas de 5L", quantidade_lata);
+    printf("\nQuantidade de Tinta: %d L", quantidade_tinta + 1);
+    printf("\nCusto Total: %d REAIS", quantidade_lata * 50);
+
+    return 0;
+    }
