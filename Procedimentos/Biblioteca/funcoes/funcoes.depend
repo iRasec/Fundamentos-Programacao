@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1739802056 source:c:\users\ccmd\desktop\procedimentos\biblioteca\funcoes\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../funcoes.h"
+
+1739802391 c:\users\ccmd\desktop\procedimentos\biblioteca\funcoes.h
+
